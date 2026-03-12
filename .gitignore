@@ -1,0 +1,63 @@
+# Dependencies
+node_modules/
+
+# Build outputs (react-native-builder-bob)
+lib/
+
+# Desktop C++ build artifacts
+build/
+*.a
+*.o
+*.so
+*.dylib
+evs_bench
+evs_test
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Xcode
+xcuserdata/
+*.xccheckout
+*.moved-aside
+DerivedData/
+*.hmap
+*.ipa
+*.xcuserstate
+**/.xcode.env.local
+
+# Android / IntelliJ
+.idea/
+.gradle/
+local.properties
+*.iml
+*.hprof
+.cxx/
+*.keystore
+!debug.keystore
+
+# CocoaPods
+**/Pods/
+
+# Xcode build output (example app)
+**/ios/build/
+
+# Ruby bundler
+**/vendor/bundle/
+**/.bundle/
+
+# Turborepo / misc
+*.tsbuildinfo
+*.log
+
+# ML models
+*.onnx
+*.gguf
+*.mlmodel
+*.tflite
+
+# Data files (benchmarks, vectors)
+*.bin
+*.evs
+data/
