@@ -1,6 +1,6 @@
 # EVSExample — Edge Vector Store Demo
 
-React Native bare CLI demo app for `@sukshm/edge-vector-store`.
+React Native bare CLI demo app for `react-native-edge-vector-store`.
 
 ## Features
 

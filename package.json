@@ -1,5 +1,5 @@
 {
-  "name": "@sukshm/edge-vector-store",
+  "name": "react-native-edge-vector-store",
   "version": "0.1.0",
   "description": "Unified on-device vector store for React Native — USearch ANN + SQLite metadata + .evs pack format",
   "main": "lib/commonjs/index.js",
@@ -11,17 +11,25 @@
     "src",
     "lib",
     "cpp",
+    "!cpp/bench",
     "third_party",
-    "android",
+    "android/build.gradle",
+    "android/cpp",
+    "android/src",
     "ios",
     "edge-vector-store.podspec",
-    "!**/__tests__"
+    "CMakeLists.txt",
+    "README.md",
+    "!**/__tests__",
+    "!**/build"
   ],
   "scripts": {
     "build": "bob build",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
-    "clean": "del-cli lib android/build ios/build"
+    "clean": "del-cli lib android/build ios/build",
+    "prepare": "bob build",
+    "prepack": "bob build"
   },
   "keywords": [
     "react-native",
@@ -31,13 +39,31 @@
     "ann",
     "hnsw",
     "embeddings",
-    "on-device"
+    "on-device",
+    "vector-search",
+    "sqlite",
+    "turbo-module",
+    "jsi"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subham11/edge-vector-store.git"
+  },
+  "bugs": {
+    "url": "https://github.com/subham11/edge-vector-store/issues"
+  },
+  "homepage": "https://github.com/subham11/edge-vector-store#readme",
+  "author": "sukshm",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "devDependencies": {
     "react-native": ">=0.73.0",
     "react-native-builder-bob": "^0.30.0",
-    "typescript": "^5.4.0"
+    "typescript": "^5.4.0",
+    "del-cli": "^6.0.0"
   },
   "peerDependencies": {
     "react": "*",

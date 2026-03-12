@@ -1,7 +1,7 @@
 // VectorSearchService — wraps EdgeVectorStore for RAG search
 
 import RNFS from 'react-native-fs';
-import { EdgeVectorStore } from '@sukshm/edge-vector-store';
+import { EdgeVectorStore } from 'react-native-edge-vector-store';
 
 const DIMS = 384;
 

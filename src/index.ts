@@ -1,5 +1,5 @@
 /**
- * @sukshm/edge-vector-store
+ * react-native-edge-vector-store
  *
  * Unified on-device vector store for React Native.
  * USearch (HNSW ANN) · SQLite (metadata) · .evs packs (distribution)

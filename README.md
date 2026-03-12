@@ -2,7 +2,7 @@
 
 > Unified on-device vector database for React Native — powered by HNSW, SIMD kernels, and zero-copy JSI.
 
-**`@sukshm/edge-vector-store`** brings production-grade vector similarity search to mobile devices. It combines a USearch-backed HNSW index, in-memory metadata with binary persistence, a tiered hot/cold architecture, and custom NEON batch kernels — all accessible through a clean TypeScript API with zero-copy Float32Array transfers via JSI.
+**`react-native-edge-vector-store`** brings production-grade vector similarity search to mobile devices. It combines a USearch-backed HNSW index, in-memory metadata with binary persistence, a tiered hot/cold architecture, and custom NEON batch kernels — all accessible through a clean TypeScript API with zero-copy Float32Array transfers via JSI.
 
 ---
 
@@ -217,10 +217,10 @@ Benchmarks run on a 100K vector dataset (384 dimensions, cosine distance) on iOS
 
 ```sh
 # npm
-npm install @sukshm/edge-vector-store
+npm install react-native-edge-vector-store
 
 # yarn
-yarn add @sukshm/edge-vector-store
+yarn add react-native-edge-vector-store
 ```
 
 ### iOS
@@ -240,8 +240,8 @@ No extra steps — the Gradle plugin builds the native library via CMake automat
 ## Quick Start
 
 ```typescript
-import { EdgeVectorStore } from '@sukshm/edge-vector-store';
-import type { StoreConfig, Document, SearchOptions } from '@sukshm/edge-vector-store';
+import { EdgeVectorStore } from 'react-native-edge-vector-store';
+import type { StoreConfig, Document, SearchOptions } from 'react-native-edge-vector-store';
 
 // 1. Initialise a store
 const config: StoreConfig = {

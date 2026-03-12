@@ -13,7 +13,7 @@
     "@react-native/new-app-screen": "0.84.1",
     "@react-navigation/native": "^7.1.0",
     "@react-navigation/native-stack": "^7.3.0",
-    "@sukshm/edge-vector-store": "file:..",
+    "react-native-edge-vector-store": "file:..",
     "llama.rn": "^0.11.4",
     "onnxruntime-react-native": "^1.24.3",
     "react": "19.2.3",

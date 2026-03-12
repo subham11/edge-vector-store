@@ -1,5 +1,5 @@
 import RNFS from 'react-native-fs';
-import { EdgeVectorStore } from '@sukshm/edge-vector-store';
+import { EdgeVectorStore } from 'react-native-edge-vector-store';
 
 // ─── Benchmark Suite ────────────────────────────────────────
 //
